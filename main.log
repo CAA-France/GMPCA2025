@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.10.2)  10 APR 2025 16:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.10.2)  10 APR 2025 17:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1244,7 +1244,11 @@ File: figures/national-chapters_2025.pdf Graphic file (type pdf)
 <use figures/national-chapters_2025.pdf>
 Package pdftex.def Info: figures/national-chapters_2025.pdf  used on input line
  99.
-(pdftex.def)             Requested size: 279.74312pt x 188.4318pt.
+(pdftex.def)             Requested size: 321.70033pt x 216.6953pt.
+
+Overfull \vbox (21.56432pt too high) detected at line 99
+ []
+
 
 
 [2
@@ -1350,7 +1354,7 @@ helvetic/uhvb8a.pfb><C:/Users/jgravier/AppData/Local/Programs/MiKTeX/fonts/type
 1/urw/helvetic/uhvbo8a.pfb><C:/Users/jgravier/AppData/Local/Programs/MiKTeX/fon
 ts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/jgravier/AppData/Local/Programs/MiKT
 eX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (6 pages, 3208956 bytes).
+Output written on main.pdf (6 pages, 3208367 bytes).
 PDF statistics:
  5825 PDF objects out of 6186 (max. 8388607)
  13 named destinations out of 1000 (max. 500000)
