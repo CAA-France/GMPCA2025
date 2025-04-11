@@ -1,50 +1,72 @@
-%================================================
-%	PACKAGES AND THEMES
-%================================================
-\documentclass[t,aspectratio=169,xcolor=dvipsnames]{beamer}
+%!TEX spellcheck = fr_FR
+%!TEX encoding = UTF-8 Unicode
+%!TEX TS-program = xelatex
 
-\usetheme{SimplePlusAIC}
+\documentclass[xcolor=dvipsnames, 10pt, french, american]{beamer} 
 
-\usepackage{hyperref}
-\usepackage{graphicx} % Allows including images
-\usepackage{booktabs} % Allows the use of \toprule, \midrule and  \bottomrule in tables
-\usepackage{svg} % Allows using svg figures
-%\usepackage{makecell}
-\newcommand*{\defeq}{\stackrel{\text{def}}{=}}
-\usepackage{setspace}
-\usepackage[T1]{fontenc}
-\usepackage{helvet}
-%\usepackage{textgreek}
-\usepackage{amsmath}
-\usepackage{bm}
-\usepackage{ragged2e}
-\usepackage{xfrac}
-% \usepackage[nice]{nicefrac}
-\usepackage[loose]{units}
-%\usepackage{braket}
-%\usepackage{gensymb}
-% \usepackage[cm]{sfmath}
-%\usepackage{verbatim}
-%\usepackage{fancyvrb}
-\usepackage{tikz} % Allows nice main page with logo
+% —  —  —  —  —  —  —  —  —  —  —  —  —  —  —  —  —  —  —  — 
+% 			CHARGEMENT PACKAGES					%
+% —  —  —  —  —  —  —  —  —  —  —  —  —  —  —  —  —  —  —  — 
 
-%\setbeamertemplate{blocks}[rounded][shadow] % block options
+\usepackage{libertine}
+\usepackage{courier}
+\usepackage{babel}
+\usepackage{xspace}
+\usepackage{xcolor}
+\usepackage{csquotes}
 
-\usepackage[svgnames,table]{xcolor}
-\arrayrulecolor{black}
-\setlength{\arrayrulewidth}{0.20mm}
-\renewcommand{\arraystretch}{1.40}  % stretch tables row size
+
+\hypersetup{
+  colorlinks,
+  allcolors=.,
+  urlcolor=magenta,
+  pdftitle={},
+  pdfauthor={CAA-FR},
+  pdfsubject={},%
+  pdfkeywords={},%
+ pdfcreator={LuaLaTeX},%
+}
+ 
+
+ 
+
+% —  —  —  —  —  —  —  —  —  —  —  —  —  —  —  —  —  —  —  — 
+% 			CONFIGURATION BEAMER					%
+% —  —  —  —  —  —  —  —  —  —  —  —  —  —  —  —  —  —  —  — 
+
+ \usetheme{Antibes}%Berlin, Warsaw, Copenhagen, Frankfurt, Antibes  Darmstadt
+%\usecolortheme{crane}% crane seagull
+\usecolortheme[named=Violet]{structure} %  Aquamarine RawSienna RedViolet    WildStrawberry  Magenta Turquoise YellowGreen    dvipsnam.def  pour la liste de couleurs
+%~ \usefonttheme{structuresmallcapsserif}
+\setbeamertemplate{background canvas}[verticalshading, top=couleur1, middle=couleur2, midpoint=valeur, bottom=couleur3,  bibliography item=triangle]
+\setbeamerfont{headline}{size=\normalsize, }
+\setbeamerfont{frametitle}{size=\large, }
+
+\beamertemplatenavigationsymbolsempty
+\setcounter{secnumdepth}{1}% profondeur jusqu'à ce que les sections sont numérotées (partie=-1 ; chapitre=0 ; section=1 ; subsection=2)
+\setcounter{tocdepth}{2}%profondeur jusqu'à laquelle elles sont affichées dans la TOC
+
+
+% — 
+
+% —  —  —  —  —  —  —  —  —  —  —  —  —  —  —  —  —  —  
+% 			DONNÉES DESCRIPTIVES					%
+% —  —  —  —  —  —  —  —  —  —  —  —  —  —  —  —  —  —  
+
 
 %================================================
 %	TITLE PAGE
 %================================================
-\title[short title]{Le chapitre français du CAA} 
-\subtitle{\textit{Computer Applications and Quantitative Methods in Archaeology} -- CAA-FR}
+\title{CAA-FR, the French CAA chapter} 
+\subtitle{Computer Applications and Quantitative Methods in Archaeology}
 
-\author{https://caafrance.hypotheses.org}
-% \institute[CBI]{Center for Anything, Department of Something \\ University of Anywhere \\ Somewhere \\ ~ \\}
+\author{\url{https://caafrance.hypotheses.org}}
+% \institute{}
 
-\date{\textcolor{nyublue}{GMPCA 2025, Rouen, 14 avril 2025}}
+\date{GMPCA 2025, Rouen, 14 avril 2025\\\bigskip
+
+\includegraphics[height=0.1\textheight]{figures/caa-fr-logo.png}
+}
 
 %================================================
 %	BEGIN DOCUMENT 
@@ -54,117 +76,125 @@
 %------------------------------------------------
 %	TITLE SLIDE
 %------------------------------------------------
-\begin{frame}[plain]
-
+\begin{frame}
     \titlepage
-    
 \end{frame}
 
-%------------------------------------------------
-%	NEW SLIDE
-%------------------------------------------------
-\begin{frame}{overview caa-int}
 
-    \frametitle{CAA International}
+\section{CAA International}
+\frame{\tableofcontents[sectionstyle=show/shaded, subsectionstyle=show/hide/hide]}
+ 
+ 
+ \begin{frame}
+    \begin{block}{What is the CAA International?}
+    
+        Computer Applications and Quantitative Methods in Archaeology\bigskip
+        
+        \begin{quote}
+            CAA is an international organisation bringing together archaeologists, mathematicians and computer scientists. Its aims are to encourage communication between these disciplines, to provide a survey of present work in the field and to stimulate discussion and future progress.
+        \end{quote}
+        
+        \url{https://caa-international.org}
+    \end{block}
+ \end{frame}
+ 
 
-    %\vspace{0.5mm}
-
-    \begin{figure}
-        \includegraphics[height=0.92\textheight]{figures/national-chapters2025.pdf}
-    \end{figure}
-
+\begin{frame}
+    \centering
+        \includegraphics[height=0.8\textheight]{figures/national-chapters2025}
 \end{frame}
 
-%------------------------------------------------
-%	NEW SLIDE
-%------------------------------------------------
 
-\begin{frame}{overview caa-fr 1}
+\section{Overview of the CAA-FR} 
+\frame{\tableofcontents[sectionstyle=show/shaded, subsectionstyle=show/hide/hide]}
+ 
 
-    \frametitle{Overview of the CAA-FR} 
-    %\framesubtitle{Overview}
-
-    % \vspace{-2mm}
-
-    \begin{block}{\textbf{Creation and Objectives}} % block is purple, alertblock orange and exampleblock in blue-green
-       
+\begin{frame}
+    CAA-FR was created at the CAA 2024 Auckland conference!
+    \begin{block}{Objectives}
         \begin{itemize}
-            \item \textbf{2024}: Creation during CAA Conference in Auckland
-            \item To bring together archaeologists, archaeometrists, mathematicians, computer scientists and members of other disciplines based in France to complement and extend the interests of CAA International
-            \item To encourage communication between these disciplines
-            \item To give a survey of present work in the field
-            \item To stimulate discussion and future progress in the application of information technology to archaeological research and practice
-            \item To provide guidance and support in the form of seminars and/or workshops
+            \item To bring together archaeologists, archaeometrists, mathematicians, computer scientists and members of other disciplines based in France to complement and extend the interests of CAA International.
+            \item To encourage communication between these disciplines.
+            \item To give a survey of present work in the field.
+            \item To stimulate discussion and future progress in the application of information technology to archaeological research and practice.
+            \item To provide guidance and support in the form of seminars and/or workshops.
         \end{itemize}
-
     \end{block}
-
-    \end{frame}
+\end{frame}
     
-%------------------------------------------------
-%	NEW SLIDE
-%------------------------------------------------
 
-    \begin{frame}{overview caa-fr 2}
-
-    \frametitle{Overview of the CAA-FR} 
-    %\framesubtitle{Overview}
-        \begin{block}{\textbf{Current \textit{Bureau}}}
-       
+\begin{frame}
+    \begin{block}{Current \textit{Bureau}}
         \begin{itemize}
-            \item \textbf{2024-2025} \& an election biennially at the CAA-FR General Meeting
-            \item \textbf{Three speakers}: Dr Nicolas Frerebeau (UMR 6034 Archéosciences Bordeaux), Dr Sébastien Plutniak (UMR 7324 CITERES), Dr Gwénaëlle Moreau (SpaceARC).% j'ai fait du copier-coller, si ça tient à moi > je virerai le "Dr"
-            \item \textbf{Three vice-speakers}: Dr Anaïs Vignoles (MSCA fellow), Mathias Bellat (PhD candidate, University of Tübingen), Dr Julie Gravier (UMR 6049 ThéMA)
+            \item \textbf{2024-2025} \& an election biennially at the CAA-FR General Meeting % je ne comprnds pas ce que ça veut dire
+            \item \textbf{Three speakers}:
+                \begin{itemize}
+                    \item Dr Nicolas Frerebeau (UMR 6034 Archéosciences Bordeaux)
+                    \item Dr Gwénaëlle Moreau (SpaceARC).% j'ai fait du copier-coller, si ça tient à moi > je virerai le "Dr"
+                    \item Dr Sébastien Plutniak (UMR 7324 CITERES)
+                \end{itemize}
+            \item \textbf{Three vice-speakers}:
+                \begin{itemize}
+                    \item Dr Anaïs Vignoles (MSCA fellow)
+                    \item Mathias Bellat (PhD candidate, University of Tübingen) 
+                    \item Dr Julie Gravier (UMR 6049 ThéMA)
+                \end{itemize}
         \end{itemize}
-
     \end{block}
-    
-    \end{frame}
+\end{frame}
 
-%------------------------------------------------
-%	NEW SLIDE
-%------------------------------------------------
 
-\begin{frame}{activities}
-	
-	\frametitle{Activities since 2024}
-	
-	\begin{block}{\textbf{CAA-FR Website}}
-		
-		\begin{itemize}
-			\item \href{https://caafrance.hypotheses.org}{https://caafrance.hypotheses.org}
-		\end{itemize}
-		
+\section{Activities since 2024}
+\frame{\tableofcontents[sectionstyle=show/shaded, subsectionstyle=show/hide/hide]}
+ 
+
+\subsection{Online presence}
+\frame{\tableofcontents[sectionstyle=show/shaded, subsectionstyle=show/shaded/hide]}
+ 
+ 
+\begin{frame}
+	\begin{block}{CAA-FR Website}
+        \begin{center}
+            \includegraphics[height=0.6\textheight]{figures/caa-fr-website}
+        \end{center}
+        \url{https://caafrance.hypotheses.org}
 	\end{block}
-	
-	\textcolor{red}{à construire}
-	
 \end{frame}
 
-%------------------------------------------------
-%	NEW SLIDE
-%------------------------------------------------
 
-\begin{frame}{colloque ACQuA}
+\begin{frame}
+     \begin{columns}[t]
+    	\column{0.5\textwidth}
+            CAA-FR \emph{Mastodon} account\medskip
+            
+            \includegraphics[height=0.5\textheight]{figures/caa-fr-mastodon}\medskip
+            
+            \url{https://archaeo.social/@CAAfr}
+    	
+    	\column{0.5\textwidth}
+            CAA-FR \emph{github} repositories\medskip
+            
+            \includegraphics[height=0.5\textheight]{figures/caa-fr-github}\medskip
+            
+            \url{https://github.com/CAA-France}
+    \end{columns}
+\end{frame}
 
-    \frametitle{Activities since 2024} 
-    %\framesubtitle{Subtitle}
 
-    \begin{block}{\textbf{ACQuA Colloquium (Jan. 2025)}}
-    	\begin{itemize}
-    		\item \href{https://acqua.sciencesconf.org/}{https://acqua.sciencesconf.org/}
-    	\end{itemize}
-    \end{block}
-    
-    %\vspace{4mm}
+
+\subsection{The \emph{ACQuA} launching conference}
+\frame{\tableofcontents[sectionstyle=show/shaded, subsectionstyle=show/shaded/hide]}
+ 
+
+\begin{frame}
+
+    \url{https://acqua.sciencesconf.org}
     
     \begin{columns}[t]
     	
     	\column{0.5\textwidth}
     	
-    	\begin{figure}
-    		\includegraphics[height=0.48\textheight]{figures/acqua2025.png}
-    	\end{figure}
+        \includegraphics[height=0.4\textheight]{figures/acqua2025}
     	
     	\column{0.5\textwidth}
     	
@@ -176,52 +206,57 @@
     		\item Forum of young researchers % Forum des jeunes chercheur·e·s présentations flashs > 8 présentations
     		\item Workshop on digital tools and approaches in archaeology % Workshop autour d'outils et de démarches numériques en archéologie > 4 présentations plus longues avec envoi de textes préalablement au workshop
     	\end{itemize}
-    	
     \end{columns}
-  
 \end{frame}
 
-%------------------------------------------------
-%	NEW SLIDE
-%------------------------------------------------
 
-\begin{frame}{activities}
+\begin{frame}
+    \begin{center}
+        \includegraphics[height=0.45\textheight]{figures/acqua1}
+        \includegraphics[height=0.45\textheight]{figures/acqua2}
+    \end{center}
+\end{frame}
 
-    \frametitle{Activities since 2024}
 
+\begin{frame}
+    \begin{center}
+        \includegraphics[height=0.6\textheight]{figures/acqua3}
+        \includegraphics[height=0.6\textheight]{figures/acqua4}
+    \end{center}
+\end{frame}
+
+
+
+
+\subsection{Other actions}
+\frame{\tableofcontents[sectionstyle=show/shaded, subsectionstyle=show/shaded/hide]}
+ 
+ 
+\begin{frame}
     \begin{block}{\textbf{Support for young researchers for CAA Athens 2025}}
        
         \begin{itemize}
             \item In collaboration with the École française d'Athènes
-            \item 5 rooms available during the week of the conference % 5 candidatures
+            \item 5 rooms available during the week of the conference 
         \end{itemize}
-
     \end{block}
-
 \end{frame}
 
-%------------------------------------------------
-%	NEW SLIDE
-%------------------------------------------------
 
+
+\section{Join us!}
+\frame{\tableofcontents[sectionstyle=show/shaded, subsectionstyle=show/hide/hide]}
+ 
+ 
 \begin{frame}
-	
-	\frametitle{Join us!}
-	
-	\begin{block}{\textbf{Two mailing lists % "Nous rejoindre" on the CAA-FR Website
-		}}
-		
+	\begin{block}{Two mailing lists}
 		\begin{itemize}
-			\item Both on: https://framagroupes.org/sympa/info/\textit{specific-list}
-			\item \textbf{To become a member} of the chapter: caa.france
-			\item \textbf{To receive information} about the chapter's activities, without becoming a member: caa.france.info
+			\item \textbf{To become a member} of the chapter: 
+                \url{https://framagroupes.org/sympa/info/caa.france}
+			\item \textbf{To receive information} about the chapter's activities (without becoming a member):\\ 
+                \url{https://framagroupes.org/sympa/info/caa.france.info}
 		\end{itemize}
-		
 	\end{block}
-	
 \end{frame}
 
-%================================================
-%	END DOCUMENT 
-%================================================
 \end{document}
