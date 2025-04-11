@@ -1,0 +1,6 @@
+PWD c:/Users/TH282424/Rprojects/GMPCA2025
+INPUT c:/Users/TH282424/AppData/Roaming/TinyTeX/texmf.cnf
+INPUT c:/Users/TH282424/AppData/Roaming/TinyTeX/texmf-dist/web2c/texmf.cnf
+INPUT c:/Users/TH282424/AppData/Roaming/TinyTeX/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT c:/Users/TH282424/Rprojects/GMPCA2025/main.tex
+OUTPUT c:/Users/TH282424/Rprojects/GMPCA2025/main.log

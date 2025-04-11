@@ -1,0 +1,33 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.10.4)  11 APR 2025 09:13
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**c:/Users/TH282424/Rprojects/GMPCA2025/main.tex
+(c:/Users/TH282424/Rprojects/GMPCA2025/main.tex
+LaTeX2e <2020-10-01>
+L3 programming layer <2020-09-24> xparse <2020-03-03>
+
+! LaTeX Error: File `beamer.cls' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: cls)
+
+Enter file name: 
+c:/Users/TH282424/Rprojects/GMPCA2025/main.tex:5: Emergency stop.
+<read *> 
+         
+l.5 ^^M
+       
+*** (cannot \read from terminal in nonstop modes)
+
+ 
+Here is how much of TeX's memory you used:
+ 21 strings out of 481886
+ 561 string characters out of 5930216
+ 257978 words of memory out of 5000000
+ 16426 multiletter control sequences out of 15000+600000
+ 535088 words of font info for 29 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 32i,0n,39p,127b,13s stack positions out of 5000i,500n,10000p,200000b,80000s
+c:/Users/TH282424/Rprojects/GMPCA2025/main.tex:5:  ==> Fatal error occurred, no output PDF file produced!
